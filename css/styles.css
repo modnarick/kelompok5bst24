@@ -591,6 +591,7 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+  
 }
 
 .img-thumbnail {
@@ -2830,13 +2831,12 @@ textarea.form-control-lg {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
-  color: var(--bs-btn-disabled-color);
+  color: black;
   pointer-events: none;
-  background-color: var(--bs-btn-disabled-bg);
-  border-color: var(--bs-btn-disabled-border-color);
-  opacity: var(--bs-btn-disabled-opacity);
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
 }
-
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #bc9e1a;
@@ -3813,10 +3813,11 @@ textarea.form-control-lg {
 .navbar-toggler {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
-  line-height: 1;
+  line-height: 0;
   color: var(--bs-navbar-color);
-  background-color: transparent;
+  background-color: var(--bs-secondary);
   border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.05);
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
 }
@@ -10900,7 +10901,7 @@ html {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #bc9c1a;
+  color: var(--bs-secondary);
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
@@ -10994,7 +10995,12 @@ html {
   display: block;
   max-width: 25rem;
   border-radius: 0.5rem;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.portfolio-item:hover{
+  transform: scale(1.1);
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
