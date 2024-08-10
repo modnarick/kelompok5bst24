@@ -22,7 +22,7 @@ btns.forEach((btn) => {
 });
 
 /* Logic  untuk ngirim email pake email.js*/
-emailjs.init('npWbRdRL4RMSV4lYN');
+emailjs.init('vyftArbroigsotN1w');
 
 // ngambil dom submitButton
 const submitButton = document.getElementById('submitButton');
@@ -38,9 +38,9 @@ submitButton.addEventListener('click', () => {
   
   // ngirim email via email.js
   emailjs.send(
-    'kelompok5bst', 
-    'template_8vtyv6o', 
+    'kelompokbst5', 
+    'template_fpylhk9', 
     formData, 
-    'npWbRdRL4RMSV4lYN'
+    'vyftArbroigsotN1w'
   )
 });
