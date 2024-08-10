@@ -5,11 +5,14 @@
         <meta charset="utf-8" />
         <title>Creative Portofolio | FP BST Schematics</title>
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/pure.css" rel="stylesheet" />
         <!-- Icons Pack (Free To useeeeeee)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Fonts Packkkkkk-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
+        <script src="script.js" defer> </script>
     </head>
     <!--End Kepala Website------------------->
 
@@ -63,8 +66,16 @@
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
+                    
+                    <div class="filter-btn-container">
+                        <button class="filter-btn" filter="all">All Projects</button>
+                        <button class="filter-btn" filter="film">Film</button>
+                        <button class="filter-btn" filter="music">Music</button>
+                        <button class="filter-btn" filter="book">Book</button>
+                    </div>
+
                     <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="item col-md-6 col-lg-4 mb-5" category="film">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -73,7 +84,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="item col-md-6 col-lg-4 mb-5" category="film">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -82,7 +93,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="item col-md-6 col-lg-4 mb-5" category="music">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -91,7 +102,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="item col-md-6 col-lg-4 mb-5 mb-lg-0" category="music">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -100,7 +111,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="item col-md-6 col-lg-4 mb-5 mb-md-0" category="book">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -109,7 +120,7 @@
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
+                    <div class="item col-md-6 col-lg-4" category="book">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
@@ -436,6 +447,10 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>        
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <!-- email.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
     </body>
 </html>
